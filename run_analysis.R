@@ -61,5 +61,5 @@ tidyData <- mergedReduced %>%
   group_by(Subject, Activity, ActName) %>% 
   summarise_all(mean)
 
-### Creaes file tidy.txt ###
+### Creates file tidy.txt ###
 fwrite(tidyData, "tidy.txt")
